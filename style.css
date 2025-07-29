@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Roboto', 'Open Sans', 'Luckiest Guy', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; 
+}
+
+.geral {
+   display: flex;
+   flex-direction: column;
+   width: 100%; 
+   min-height: 100vh; 
+   margin: 0 auto; 
+   padding: 0;
+}
+
+.primeira-parte {
+    position: relative; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 600px; 
+    background-image: url(assets/images/Header.png); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+    color: white;
+    text-align: center;
+    overflow: hidden; 
+    padding: 20px; 
+    
+}
+
+.primeira-parte h1 {
+    font-family: 'Luckiest Guy', sans-serif;
+    font-weight: 400;
+    font-size: 56px; 
+    line-height: 1.2; 
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+    width: 90%; 
+    z-index: 1; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+    margin-bottom: 20px; 
+}
+
+
+.primeira-parte h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px; 
+    line-height: 1.5; 
+    letter-spacing: 0%;
+    text-align: center;
+    color: white; 
+    width: 80%; 
+    z-index: 1; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+    word-break: break-word; 
+    margin-bottom: 40px; 
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 20px; 
+  width: 100%; 
+  flex-wrap: wrap; 
+}
+
+#btn-baixar, #btn-navegador {
+    height: 44px;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    opacity: 1;
+    border: none;
+    border-radius: 28px;
+    padding: 10px 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    white-space: nowrap; 
+}
+
+#btn-baixar {
+    background-color: white;
+    color: #23272A;
+}
+
+#btn-baixar:hover {
+    background-color: #f0f0f0;
+}
+
+#btn-navegador {
+    background-color: #23272A;
+    color: white;
+}
+
+#btn-navegador:hover {
+    background-color: #36393f;
+}
+
+
+.section-1, .section-2, .section-3 {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px; 
+    gap: 40px; 
+    color: #23272A;
+    min-height: 500px;
+}
+
+.section-2 {
+    background-color: #F6F6F6;
+}
+
+
+.section-2 {
+    flex-direction: row-reverse; 
+}
+
+.section-1 .imagem1,
+.section-2 .imagem2,
+.section-3 .imagem3,
+.section-4 .imagem4 {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .imagem1 img,
+.section-2 .imagem2 img,
+.section-3 .imagem3 img,
+.section-4 .imagem4 img
+ {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.section-4 .imagem4 img{
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    justify-self: center;
+}
+
+.section-1 .texto1,
+.section-2 .texto2,
+.section-3 .texto3,
+.section-4 .texto4  {
+    flex: 1; 
+    max-width: 400px; 
+    text-align: left; 
+}
+
+.section-1 h1, .section-2 h1, .section-3 h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.section-1 p, .section-2 p, .section-3 p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+
+.section-4 {
+  background-color: #F6F6F6;
+  color: #23272A;
+  padding: 30px;
+}
+
+
+.imagem4 {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.section-4 h1 {
+font-family: 'Luckiest Guy', sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 40px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 20px;
+}
+
+ .section-4 p {
+   font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    word-break: break-word; 
+    margin-left: 2%;
+  }
+
+  .logo {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #23272A;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+  }
+
+  .logo img {
+
+    margin-top: 1.5%;
+    margin-left: 40%;
+    
+  }
+
+
+/* Media queries para responsividade */
+@media only screen and (max-width: 768px) {
+    .primeira-parte {
+        height: 500px; 
+    }
+
+    .primeira-parte h1 {
+        font-size: 40px; 
+    }
+
+    .primeira-parte h2 {
+        font-size: 16px; 
+    }
+
+    .botoes {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    #btn-baixar, #btn-navegador {
+        width: 80%; 
+        max-width: 300px; 
+    }
+
+    .section-1, .section-2, .section-3, .section-4{
+        flex-direction: column; 
+        text-align: center; 
+        padding: 60px 20px;
+    }
+
+    .section-1 .texto1,
+    .section-2 .texto2,
+    .section-3 .texto3 {
+        max-width: 90%; 
+        text-align: center; 
+    }
+
+    .section-1 h1, .section-2 h1, .section-3 h1, .section-4 h1 {
+        font-size: 32px; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .primeira-parte {
+        height: 400px;
+        background-position: center top; 
+    }
+
+    .primeira-parte h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .primeira-parte h2 {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .section-1, .section-2, .section-3, .section-4 {
+        padding: 40px 15px;
+        gap: 20px;
+    }
+
+    .section-1 h1, .section-2 h1, .section-3 h1, .section-4 h1 {
+        font-size: 28px;
+    }
+
+    .section-1 p, .section-2 p, .section-3 p, .section-4 p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .logo {
+    height: 140px;
+    top: 2652px;
+
+  }
+
+    .logo img {
+      width: 50%;
+      margin-top: 6%;
+      margin-left: 25%;
+    }
+
+}
